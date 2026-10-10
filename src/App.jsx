@@ -1,16 +1,19 @@
-import React from 'react';
-import SponsorsPage from './pages/sponser/SponsorsPage.jsx';
-import MentorsPage from './pages/mentor/MentorsPage.jsx';
+import TimelinePage from "./pages/TimelinePage";
+import PrizePage from "./pages/PrizePage";
+import SponsorsPage from "./pages/SponsorsPage";
+import MentorsPage from "./pages/MentorsPage";
+import FAQPage from "./pages/FAQPage";
+import ReadyToBuildPage from "./pages/ReadyToBuildPage";
 
-/**
- * App Component
- * Stacks the Sponsors and Mentors sections on a single unified page.
- */
 export default function App() {
   return (
-    <main>
+    <main className="w-full overflow-hidden">
+      <TimelinePage />
+      <PrizePage />
       <SponsorsPage />
       <MentorsPage />
+      <FAQPage />
+      <ReadyToBuildPage />
     </main>
   );
 }

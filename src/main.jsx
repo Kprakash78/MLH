@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import RegisterCTA from "./RegisterCTA";
+import App from "./App";
 
-createRoot(document.getElementById("root")).render(<RegisterCTA />);
+createRoot(document.getElementById("root")).render(<App />);
